@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(255, 232, 183);
+        }
+        *{
+            box-sizing: border-box;
+            color: rgb(61, 61, 61);
+        }
+        .container{
+            background-color: #fff;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            height: 50vh;
+            width: 30vw;
+            position: relative;
+            margin: 15vh auto;
+            justify-content: center;
+        }
+
+        .left>img{
+            width: 80%;
+        }
+        .right>img{
+            height: 100%;
+            margin-left: 21px;
+            position: absolute; /* Position the image absolutely within the container */
+        }
+        h2{
+            margin-top: 5vh;
+            color: rgb(148, 20, 24);
+            font-family: sans-serif;
+            
+        }
+        .left{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .left input{
+            display: block;
+            margin: auto;
+            margin-top: 5px;
+            height: 30px;
+        }
+        .rem{
+            display: flex;
+            align-items: center;
+            margin-left: 8%;
+            margin-top: 10px;
+        }
+        .rem>input{
+            margin: 0px;
+            margin-right: 2px;
+        }
+        form>input[type="submit"]{
+            background-color:rgb(148, 20, 24);
+            border: none;
+            border-radius: 3px;
+            color: white;
+            font-size: 15px;
+            padding: 4px;
+            margin-top: 10px;
+        }
+        form>p{
+            font-size: 12px;
+            font-family: sans-serif;
+        }
+        #phone{
+            margin-top: 10px;
+            width:  85%;
+            border-radius: 3px;
+            border: 1px solid gray;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <img src="" alt="" class="background"> -->
+    <!-- <img src="./assets/images/Screenshot 2024-03-10 170050.png" alt="" class="background"> -->
+    <div class="container">
+        <div class="left">
+            <h2>Login Or Signup</h2>
+            <img src="./assets/images/login-pop-up.webp" alt="">
+            <form>
+                <input type="number" name="phone" id="phone" placeholder="Enter your Mobile Number">
+                <div class="rem">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember Me</label>
+                </div>
+                <!-- <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember Me</label> -->
+                <p>By continuing, I agree to Terms of Use & Privacy Policy</p>
+                <input type="submit" value="Request OTP">
+            </form>
+        </div>
+        <div class="right">
+            <img src="./assets/images/banner.webp" alt="">
+        </div>
+    </div>
+    <a href="index.html"><p>back to home page</p></a>
+</body>
+</html>
